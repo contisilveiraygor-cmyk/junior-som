@@ -397,7 +397,8 @@ body.modal-lock{overflow:hidden}
   width:100%;
   padding:72px 0;
 }
-.pf-bg .pf-texto{max-width:520px;margin-right:auto}
+.pf-bg .wrap{display:flex;justify-content:flex-start}
+.pf-bg .pf-texto{max-width:480px;margin-right:auto}
 .pf-bg .pf-texto h2{font-size:clamp(28px,3.5vw,44px)}
 .pf-bg .pf-texto p{color:rgba(255,255,255,.8)}
 .pf-bg .pf-feats li span{color:rgba(255,255,255,.65)}
