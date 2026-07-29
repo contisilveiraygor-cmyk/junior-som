@@ -84,8 +84,8 @@
         "assets/img/farol-1.jpg",
         "assets/img/farol-2.jpg",
         "assets/img/farol-3.jpg",
-        "youtube:ALiWwLbG2jQ",
-        "youtube:v-Jmox_eWVg"
+        "youtubeP:ALiWwLbG2jQ",
+        "youtubeP:v-Jmox_eWVg"
       ]
     },
     rastreador: {
@@ -117,9 +117,10 @@
 
   function tile(src, alt, isPlaceholder){
     var d = document.createElement('div');
-    var ytId = src && /^youtube:(.+)/.exec(src);
-    ytId = ytId ? ytId[1] : null;
-    d.className = 'pg-item' + (isPlaceholder || !src ? '' : ytId ? ' pg-video' : ' tem-foto');
+    var ytMatch = src && /^youtube(P?):(.+)/.exec(src);
+    var ytPortrait = ytMatch ? ytMatch[1] === 'P' : false;
+    var ytId = ytMatch ? ytMatch[2] : null;
+    d.className = 'pg-item' + (isPlaceholder || !src ? '' : ytId ? (ytPortrait ? ' pg-video-p' : ' pg-video') : ' tem-foto');
     if(isPlaceholder || !src){
       d.innerHTML = '<div class="pg-ph"><span class="pg-icon" aria-hidden="true">📷</span><span>Foto em breve</span></div>';
     } else if(ytId) {
