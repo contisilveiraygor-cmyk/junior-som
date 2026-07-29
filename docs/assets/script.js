@@ -84,8 +84,8 @@
         "assets/img/farol-1.jpg",
         "assets/img/farol-2.jpg",
         "assets/img/farol-3.jpg",
-        "assets/img/farol-4.jpg",
-        "assets/img/farol-5.jpg"
+        "youtube:ALiWwLbG2jQ",
+        "youtube:v-Jmox_eWVg"
       ]
     },
     rastreador: {
