@@ -58,8 +58,8 @@
         "assets/img/projetos-1.jpg",
         "assets/img/projetos-2.jpg",
         "assets/img/projetos-3.jpg",
-        "assets/img/projetos-4.jpg",
-        "assets/img/projetos-5.jpg"
+        "youtube:crs1xJeCUSA"
+        // segundo vídeo em breve
       ]
     },
     multimidia: {
@@ -115,9 +115,19 @@
 
   function tile(src, alt, isPlaceholder){
     var d = document.createElement('div');
-    d.className = 'pg-item' + (isPlaceholder ? '' : ' tem-foto');
-    if(isPlaceholder){
+    var ytId = src && /^youtube:(.+)/.exec(src);
+    ytId = ytId ? ytId[1] : null;
+    d.className = 'pg-item' + (isPlaceholder || !src ? '' : ytId ? '' : ' tem-foto');
+    if(isPlaceholder || !src){
       d.innerHTML = '<div class="pg-ph"><span class="pg-icon" aria-hidden="true">📷</span><span>Foto em breve</span></div>';
+    } else if(ytId) {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + ytId + '?rel=0';
+      iframe.title = alt || 'Vídeo do projeto';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+      d.appendChild(iframe);
     } else {
       var im = document.createElement('img');
       im.src = src; im.alt = alt; im.loading = 'lazy';
@@ -138,6 +148,8 @@
       fotos.forEach(function(src, i){
         elGal.appendChild(tile(src, cat.titulo + ' — projeto ' + (i+1), false));
       });
+      // preenche slots restantes até 5 com placeholder
+      for(var i=fotos.length; i<5; i++){ elGal.appendChild(tile(null, '', true)); }
     } else {
       // sem fotos ainda: mostra 5 molduras no layout (1 grande + 4)
       for(var i=0;i<5;i++){ elGal.appendChild(tile(null, '', true)); }
