@@ -117,7 +117,7 @@
     var d = document.createElement('div');
     var ytId = src && /^youtube:(.+)/.exec(src);
     ytId = ytId ? ytId[1] : null;
-    d.className = 'pg-item' + (isPlaceholder || !src ? '' : ytId ? '' : ' tem-foto');
+    d.className = 'pg-item' + (isPlaceholder || !src ? '' : ytId ? ' pg-video' : ' tem-foto');
     if(isPlaceholder || !src){
       d.innerHTML = '<div class="pg-ph"><span class="pg-icon" aria-hidden="true">📷</span><span>Foto em breve</span></div>';
     } else if(ytId) {
