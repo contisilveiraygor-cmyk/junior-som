@@ -72,8 +72,8 @@
         "assets/img/multimidia-1.jpg",
         "assets/img/multimidia-2.jpg",
         "assets/img/multimidia-3.jpg",
-        "assets/img/multimidia-4.jpg",
-        "assets/img/multimidia-5.jpg"
+        "youtubeP:TIRQywEMcDs",
+        "youtubeP:U62-IxEMJG8"
       ]
     },
     farol: {
