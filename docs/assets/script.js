@@ -58,8 +58,10 @@
         "assets/img/projetos-1.jpg",
         "assets/img/projetos-2.jpg",
         "assets/img/projetos-3.jpg",
-        "youtube:crs1xJeCUSA"
-        // segundo vídeo em breve
+        "youtube:crs1xJeCUSA",
+        "youtube:KL0xNTmH2Hg",
+        "youtube:jcvKC8lH7a8",
+        "youtube:J0KeaT3ht2Q"
       ]
     },
     multimidia: {
