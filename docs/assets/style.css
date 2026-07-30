@@ -463,8 +463,12 @@ body.modal-lock{overflow:hidden}
   .pf-bg .mm-hero{grid-template-columns:1fr !important}
 }
 
-/* ── ILUMINACAO BG ── */
-.pf-bg-iluminacao{background-image:url('img/iluminacao-bg.jpg')}
+/* ── ILUMINAÇÃO INTERNA ── */
+.pf-bg-ilum-interna::before{background:linear-gradient(90deg,rgba(4,8,20,.92) 0%,rgba(4,8,20,.65) 55%,rgba(4,8,20,.25) 100%)}
+.ilum-interna-hero{max-width:560px;padding:16px 0}
+.ilum-interna-hero h2{font-size:clamp(30px,4vw,50px)}
+.ilum-interna-hero .mm-intro{margin-top:14px;color:rgba(255,255,255,.8);max-width:480px}
+@media(max-width:600px){.pf-bg-ilum-interna::before{background:rgba(4,8,20,.88)}}
 
 /* ── MULTIMIDIA BG ── */
 .pf-bg-multimidia{background-image:url('img/multimidia-bg.jpg')}
