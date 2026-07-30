@@ -63,7 +63,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(10,18,32,.9);backdrop-fi
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--borda)}
-.hero-bg{position:absolute;inset:0;background:rgba(8,14,26,.58)}
+.hero-bg{position:absolute;inset:0;background:rgba(8,14,26,.68)}
 .grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(56,182,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(56,182,255,.05) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at 70% 30%,#000,transparent 75%)}
 .hero-in{position:relative;padding:70px 20px 60px;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .kicker{display:inline-flex;align-items:center;gap:8px;font-family:'Rajdhani';font-weight:600;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--azul-claro);border:1px solid rgba(56,182,255,.35);padding:6px 14px;border-radius:99px;margin-bottom:20px}
