@@ -443,7 +443,7 @@ body.modal-lock{overflow:hidden}
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg,rgba(8,14,26,.97) 0%,rgba(8,14,26,.95) 45%,rgba(8,14,26,.4) 70%,rgba(8,14,26,.05) 100%);
+  background:rgba(8,14,26,.78);
   z-index:0;
 }
 .pf-bg .wrap{position:relative;z-index:1}
