@@ -467,6 +467,7 @@ body.modal-lock{overflow:hidden}
 .pf-bg-ilum-interna::before{background:linear-gradient(90deg,rgba(4,8,20,.88) 0%,rgba(4,8,20,.55) 55%,rgba(4,8,20,.3) 100%)}
 .ilum-produto-foto{border-radius:16px;overflow:hidden;border:1px solid rgba(56,182,255,.3);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .ilum-produto-foto img{border-radius:12px;object-fit:contain}
+@media(min-width:901px){.mm-hero>.ilum-produto-foto{grid-row:1 / span 2;grid-column:2}}
 @media(max-width:600px){.pf-bg-ilum-interna::before{background:rgba(4,8,20,.85)}}
 
 /* ── MULTIMIDIA BG ── */
