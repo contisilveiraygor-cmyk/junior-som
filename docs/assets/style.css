@@ -465,7 +465,7 @@ body.modal-lock{overflow:hidden}
 
 /* ── ILUMINAÇÃO INTERNA ── */
 .pf-bg-ilum-interna::before{background:linear-gradient(90deg,rgba(4,8,20,.88) 0%,rgba(4,8,20,.55) 55%,rgba(4,8,20,.3) 100%)}
-.ilum-produto-foto{background:transparent!important;border:none!important;box-shadow:none!important}
+.ilum-produto-foto{border-radius:16px;overflow:hidden;border:1px solid rgba(56,182,255,.3);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .ilum-produto-foto img{border-radius:12px;object-fit:contain}
 @media(max-width:600px){.pf-bg-ilum-interna::before{background:rgba(4,8,20,.85)}}
 
