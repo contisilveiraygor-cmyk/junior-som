@@ -111,10 +111,10 @@ h2 em{font-style:normal;background:linear-gradient(100deg,var(--azul-claro),var(
 /* ---------- product section ---------- */
 .prod-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
-@media(max-width:600px){.grid{grid-template-columns:1fr 1fr;gap:12px}.card .foto img{padding:8px}.card .info{padding:12px 11px 14px;gap:6px}.card h3{font-size:15px;line-height:1.22}.card .desc{font-size:12px}.card .acao{flex-direction:column;align-items:stretch;gap:8px}.preco{font-size:13.5px}.btn-mini{text-align:center;padding:9px 10px;font-size:13px}}
+@media(max-width:600px){.grid{grid-template-columns:1fr 1fr;gap:12px}.card .foto{height:150px}.card .info{padding:12px 11px 14px;gap:6px}.card h3{font-size:15px;line-height:1.22}.card .desc{font-size:12px}.card .acao{flex-direction:column;align-items:stretch;gap:8px}.preco{font-size:13.5px}.btn-mini{text-align:center;padding:9px 10px;font-size:13px}}
 .card{background:var(--card);border:1px solid var(--borda);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease}
 .card:hover{transform:translateY(-5px);border-color:var(--azul);box-shadow:0 14px 34px rgba(0,0,0,.4)}
-.card .foto{position:relative;aspect-ratio:4/4.3;background:radial-gradient(320px 210px at 50% 25%, #16273f, #0C1626)}
+.card .foto{position:relative;height:220px;background:radial-gradient(320px 210px at 50% 25%, #16273f, #0C1626)}
 .card .foto img{width:100%;height:100%;object-fit:contain;padding:12px}
 .badge{position:absolute;top:11px;left:11px;font-family:'Rajdhani';font-weight:700;font-size:12.5px;letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:6px}
 .badge.azul{background:linear-gradient(100deg,var(--azul),var(--azul-claro));color:#04101F}
@@ -153,7 +153,6 @@ h2 em{font-style:normal;background:linear-gradient(100deg,var(--azul-claro),var(
 .mm-feats-list b{display:block;font-family:'Rajdhani';font-weight:700;font-size:15.5px;letter-spacing:.3px;margin-bottom:2px}
 .mm-feats-list span{font-size:13.5px;color:var(--cinza);line-height:1.4}
 .mm-hero-ctas{display:flex;gap:13px;flex-wrap:wrap}
-@media(min-width:901px){.mm-hero>.hero-fotos{grid-row:1 / span 2;grid-column:2}.mm-hero>.mm-hero-ctas{grid-column:1;margin-top:4px}}
 .mm-hero-foto{border-radius:16px;overflow:hidden;border:1px solid var(--borda);box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .mm-hero-foto img{width:100%;display:block;object-fit:cover}
 .mm-recursos{margin-top:44px;padding-top:36px;border-top:1px solid var(--borda)}
@@ -166,7 +165,7 @@ h2 em{font-style:normal;background:linear-gradient(100deg,var(--azul-claro),var(
 .mm-rec span{font-size:12.5px;color:var(--cinza);line-height:1.4}
 @media(max-width:900px){.mm-hero{grid-template-columns:1fr;gap:30px}.mm-hero-foto{max-width:560px;margin:0 auto;width:100%}}
 @media(max-width:640px){.mm-recursos-grid{grid-template-columns:1fr 1fr}.mm-rec:last-child:nth-child(odd){grid-column:1/-1}}
-@media(max-width:600px){.mm-hero-ctas{flex-wrap:nowrap}.mm-hero-ctas .btn{flex:1;justify-content:center;font-size:13px;padding:12px 8px;white-space:nowrap}}
+@media(max-width:400px){.mm-hero-ctas{flex-direction:column}.mm-hero-ctas .btn{width:100%;justify-content:center}}
 
 /* ---------- alto-falantes e multimídia: cards visuais ---------- */
 #som .card .foto,
@@ -463,12 +462,8 @@ body.modal-lock{overflow:hidden}
   .pf-bg .mm-hero{grid-template-columns:1fr !important}
 }
 
-/* ── ILUMINAÇÃO INTERNA ── */
-.pf-bg-ilum-interna::before{background:linear-gradient(90deg,rgba(4,8,20,.92) 0%,rgba(4,8,20,.65) 55%,rgba(4,8,20,.25) 100%)}
-.ilum-interna-hero{max-width:560px;padding:16px 0}
-.ilum-interna-hero h2{font-size:clamp(30px,4vw,50px)}
-.ilum-interna-hero .mm-intro{margin-top:14px;color:rgba(255,255,255,.8);max-width:480px}
-@media(max-width:600px){.pf-bg-ilum-interna::before{background:rgba(4,8,20,.88)}}
+/* ── ILUMINACAO BG ── */
+.pf-bg-iluminacao{background-image:url('img/iluminacao-bg.jpg')}
 
 /* ── MULTIMIDIA BG ── */
 .pf-bg-multimidia{background-image:url('img/multimidia-bg.jpg')}
