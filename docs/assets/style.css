@@ -434,6 +434,10 @@ body.modal-lock{overflow:hidden}
   .pf-layout{grid-template-columns:1fr;gap:32px}
   .pf-grade{grid-template-columns:repeat(2,1fr)}
 }
+@media(max-width:600px){
+  .pf-ctas{flex-wrap:nowrap}
+  .pf-ctas .btn{flex:1;justify-content:center;font-size:13px;padding:12px 8px;white-space:nowrap}
+}
 .pf-vazio{background:var(--card);border:1px dashed var(--borda)}
 
 /* ── PROJETOS BG COMPLETO ── */
