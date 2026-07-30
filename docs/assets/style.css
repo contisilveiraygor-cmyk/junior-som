@@ -153,6 +153,7 @@ h2 em{font-style:normal;background:linear-gradient(100deg,var(--azul-claro),var(
 .mm-feats-list b{display:block;font-family:'Rajdhani';font-weight:700;font-size:15.5px;letter-spacing:.3px;margin-bottom:2px}
 .mm-feats-list span{font-size:13.5px;color:var(--cinza);line-height:1.4}
 .mm-hero-ctas{display:flex;gap:13px;flex-wrap:wrap}
+@media(min-width:901px){.mm-hero>.hero-fotos{grid-row:1 / span 2;grid-column:2}.mm-hero>.mm-hero-ctas{grid-column:1;margin-top:4px}}
 .mm-hero-foto{border-radius:16px;overflow:hidden;border:1px solid var(--borda);box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .mm-hero-foto img{width:100%;display:block;object-fit:cover}
 .mm-recursos{margin-top:44px;padding-top:36px;border-top:1px solid var(--borda)}
