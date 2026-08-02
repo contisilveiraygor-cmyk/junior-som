@@ -440,6 +440,7 @@ body.modal-lock{overflow:hidden}
   background-size:cover;
   background-position:center right;
   padding:72px 0;
+  border-top:1px solid rgba(56,182,255,.18);
 }
 .pf-bg::before{
   content:"";
